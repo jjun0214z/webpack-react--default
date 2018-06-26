@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: ['react-hot-loader/patch', './src/index.js'] ,
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -15,9 +15,10 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/,
-                query: {
+                options: {
                     cacheDirectory: true,
-                    presets: ['es2015', 'react']
+                    presets: ['es2015', 'react'],
+                    plugins: ["react-hot-loader/babel"]
                 }
             }
         ]
@@ -31,7 +32,6 @@ module.exports = {
         publicPath: "/dist/"
     },
     plugins: [
-        new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ]
 };
