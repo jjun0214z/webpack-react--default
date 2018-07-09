@@ -1,0 +1,70 @@
+/* Default Style */
+* 	 		{margin:0; padding:0;font-style: normal;letter-spacing: -0.03em}
+html {height: 100%}
+body		{background-color:#fff;height: 100%}
+
+article, aside, hgroup, header, footer, figure, figcaption, nav, section {
+	display: block;
+}
+
+ul, ol, li {list-style:none;}
+a,em,span,strong {}
+td *{vertical-align: middle;}
+
+img, hr		{border:none;}
+img			{vertical-align:top; border:0px;}
+
+/* Link Style */
+a:link		{text-decoration:none;}
+a:visited	{text-decoration:none;}
+a:active	{text-decoration:none;}
+a:hover		{text-decoration:none;}
+
+/* Table Style */
+table 		{width:100%; border-collapse:collapse; border-spacing:0; table-layout:fixed;}
+table td img {vertical-align:middle;}
+
+/* Tag all font-size set */
+b,h1,h2,h3,h4,h5,h6,th,dt, strong, em {
+	font-family:'Noto Sans KR', dotum, Arial, sans-serif;
+	color:#5e5e5e;
+	line-height:120%;
+	font-size:12px;
+	font-weight:700;
+}
+body,p,div,ul,li,dl,dd,ol,fieldset,textarea,input,select,table,td,address,cite, button {
+	font-family:'Noto Sans KR', dotum, Arial, sans-serif;
+	color:#5e5e5e;
+	font-size:12px;
+	line-height:120%;
+}
+select::-ms-expand{display: none}
+a,em,span {
+	font-family:inherit;
+	color:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	vertical-align: top;
+}
+
+button {cursor: pointer;background-color: transparent;border: 0; outline: none;}
+
+/* From Style */
+textarea	{padding:5px; border:solid 1px #333; background-color:#fff;}
+input		{vertical-align:middle;}
+input.txt,
+input.text,
+input.it	{height:23px; line-height:23px; border:solid 1px #333; background-color:#fff;}
+input.chk	{}
+input.radio	{}
+button[type=button] {cursor:pointer;border: none;}
+
+select			{height:23px; line-height:23px; border:solid 1px #333;background-color: transparent;}
+hr, caption		{display:none;}
+legend			{position:absolute; height:0; font-size:0px; line-height:0; overflow:hidden; text-indent:-20000px;}
+address,cite,em	{font-style:normal;}
+fieldset		{border:0; padding:0;}
+label			{cursor:pointer;}
+
+/* Hide Set */
+.ir	{position:absolute; left:-9999px; top:-9999px; font-size:0; line-height:0; height:0; overflow:hidden;}
