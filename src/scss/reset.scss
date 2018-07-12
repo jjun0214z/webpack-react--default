@@ -26,21 +26,20 @@ table td img {vertical-align:middle;}
 
 /* Tag all font-size set */
 b,h1,h2,h3,h4,h5,h6,th,dt, strong, em {
-	font-family:'Noto Sans KR', dotum, Arial, sans-serif;
+	font-family:'Nanum Gothic', dotum, Arial, sans-serif;
 	color:#5e5e5e;
 	line-height:120%;
 	font-size:12px;
-	font-weight:700;
+	font-weight:800;
 }
 body,p,div,ul,li,dl,dd,ol,fieldset,textarea,input,select,table,td,address,cite, button {
-	font-family:'Noto Sans KR', dotum, Arial, sans-serif;
+	font-family:'Nanum Gothic', dotum, Arial, sans-serif;
 	color:#5e5e5e;
 	font-size:12px;
 	line-height:120%;
 }
-select::-ms-expand{display: none}
 a,em,span {
-	font-family:inherit;
+	font-family:'Nanum Gothic';
 	color:inherit;
 	font-size:inherit;
 	line-height:inherit;
@@ -59,7 +58,11 @@ input.chk	{}
 input.radio	{}
 button[type=button] {cursor:pointer;border: none;}
 
-select			{height:23px; line-height:23px; border:solid 1px #333;background-color: transparent;}
+select			{background-color: transparent;
+-webkit-appearance: none; /* 화살표 없애기 for chrome*/
+-moz-appearance: none;    /* 화살표 없애기 for firefox*/
+appearance: none;         /* 화살표 없애기 공통*/
+}
 hr, caption		{display:none;}
 legend			{position:absolute; height:0; font-size:0px; line-height:0; overflow:hidden; text-indent:-20000px;}
 address,cite,em	{font-style:normal;}

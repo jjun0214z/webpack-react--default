@@ -17,7 +17,7 @@ module.exports = {
                 exclude: /node_modules/,
                 options: {
                     cacheDirectory: true,
-                    presets: ['es2015', 'react']
+                    presets: ['es2015','stage-0', 'react']
                 }
             },
             {
@@ -36,7 +36,7 @@ module.exports = {
         host: '0.0.0.0',
         port: 4000,
         contentBase: path.join(__dirname, '/public/'),
-        publicPath: "/public/"
+        publicPath: "/"
     },
     plugins: [
 
